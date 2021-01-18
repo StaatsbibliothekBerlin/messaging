@@ -1,0 +1,38 @@
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          version="2.1">
+    <bindings schemaLocation="../../xsd/tei_all.xsd" version="1.0">
+        <!-- Customise the package name -->
+        <!--schemaBindings>
+            <package name="de.staatsbibliothek-berlin.hsp.tei"/>
+        </schemaBindings-->
+
+        <!-- rename the value element -->
+        <bindings node="//xs:element[@name='distinct']/xs:complexType/xs:complexContent/xs:extension[@base='tei:macro.phraseSeq']">
+            <bindings node=".//xs:attribute[@name='space']">
+                <property name="spaceAttribute"/>
+            </bindings>
+        </bindings>
+        <bindings node="//xs:element[@name='code']/xs:complexType[@mixed='true']">
+            <bindings node=".//xs:attribute[@name='lang']">
+                <property name="langAttribute"/>
+            </bindings>
+        </bindings>
+        <bindings node="//xs:element[@name='recordHist']/xs:complexType/xs:choice/xs:sequence">
+            <bindings node=".//xs:element[@ref='tei:change']">
+                <property name="historyChangeAttribute"/>
+            </bindings>
+        </bindings>
+        <bindings node="//xs:element[@name='tagsDecl']/xs:complexType/xs:sequence">
+            <bindings node=".//xs:element[@ref='tei:rendition']">
+                <property name="renditionAttribute"/>
+            </bindings>
+        </bindings>
+        <bindings node="//xs:element[@name='revisionDesc']/xs:complexType/xs:choice">
+            <bindings node=".//xs:element[@ref='tei:change']">
+                <property name="revisionChangeAttribute"/>
+            </bindings>
+        </bindings>
+    </bindings>
+</bindings>

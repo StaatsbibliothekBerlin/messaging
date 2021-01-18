@@ -1,0 +1,1336 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2020 Staatsbibliothek zu Berlin - Preußischer Kulturbesitz
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+//
+// Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.4.0-SNAPSHOT generiert 
+// Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+// Generiert: 2020.03.03 um 05:11:39 PM CET 
+//
+
+
+package org.tei_c.ns._1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringJoiner;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementRefs;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlMixed;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+
+/**
+ * &lt;p&gt;Java-Klasse für anonymous complex type.
+ * 
+ * &lt;p&gt;Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * 
+ * &lt;pre&gt;
+ * &amp;lt;complexType&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;choice maxOccurs="unbounded" minOccurs="0"&amp;gt;
+ *         &amp;lt;group ref="{http://www.tei-c.org/ns/1.0}model.gLike"/&amp;gt;
+ *         &amp;lt;element ref="{http://www.tei-c.org/ns/1.0}c"/&amp;gt;
+ *         &amp;lt;group ref="{http://www.tei-c.org/ns/1.0}model.pPart.edit"/&amp;gt;
+ *       &amp;lt;/choice&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.tei-c.org/ns/1.0}att.global.attributes"/&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.tei-c.org/ns/1.0}att.segLike.attributes"/&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.tei-c.org/ns/1.0}att.typed.attributes"/&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.tei-c.org/ns/1.0}att.linguistic.attributes"/&amp;gt;
+ *       &amp;lt;attribute name="force"&amp;gt;
+ *         &amp;lt;simpleType&amp;gt;
+ *           &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&amp;gt;
+ *             &amp;lt;enumeration value="strong"/&amp;gt;
+ *             &amp;lt;enumeration value="weak"/&amp;gt;
+ *             &amp;lt;enumeration value="inter"/&amp;gt;
+ *           &amp;lt;/restriction&amp;gt;
+ *         &amp;lt;/simpleType&amp;gt;
+ *       &amp;lt;/attribute&amp;gt;
+ *       &amp;lt;attribute name="unit"&amp;gt;
+ *         &amp;lt;simpleType&amp;gt;
+ *           &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&amp;gt;
+ *             &amp;lt;pattern value="(\p{L}|\p{N}|\p{P}|\p{S})+"/&amp;gt;
+ *           &amp;lt;/restriction&amp;gt;
+ *         &amp;lt;/simpleType&amp;gt;
+ *       &amp;lt;/attribute&amp;gt;
+ *       &amp;lt;attribute name="pre" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "content"
+})
+@XmlRootElement(name = "pc")
+public class Pc {
+
+    @XmlElementRefs({
+        @XmlElementRef(name = "g", namespace = "http://www.tei-c.org/ns/1.0", type = G.class),
+        @XmlElementRef(name = "c", namespace = "http://www.tei-c.org/ns/1.0", type = C.class),
+        @XmlElementRef(name = "choice", namespace = "http://www.tei-c.org/ns/1.0", type = Choice.class),
+        @XmlElementRef(name = "abbr", namespace = "http://www.tei-c.org/ns/1.0", type = Abbr.class),
+        @XmlElementRef(name = "expan", namespace = "http://www.tei-c.org/ns/1.0", type = Expan.class),
+        @XmlElementRef(name = "ex", namespace = "http://www.tei-c.org/ns/1.0", type = Ex.class),
+        @XmlElementRef(name = "am", namespace = "http://www.tei-c.org/ns/1.0", type = Am.class),
+        @XmlElementRef(name = "subst", namespace = "http://www.tei-c.org/ns/1.0", type = Subst.class),
+        @XmlElementRef(name = "sic", namespace = "http://www.tei-c.org/ns/1.0", type = Sic.class),
+        @XmlElementRef(name = "corr", namespace = "http://www.tei-c.org/ns/1.0", type = Corr.class),
+        @XmlElementRef(name = "reg", namespace = "http://www.tei-c.org/ns/1.0", type = Reg.class),
+        @XmlElementRef(name = "orig", namespace = "http://www.tei-c.org/ns/1.0", type = Orig.class),
+        @XmlElementRef(name = "add", namespace = "http://www.tei-c.org/ns/1.0", type = Add.class),
+        @XmlElementRef(name = "del", namespace = "http://www.tei-c.org/ns/1.0", type = Del.class),
+        @XmlElementRef(name = "unclear", namespace = "http://www.tei-c.org/ns/1.0", type = Unclear.class),
+        @XmlElementRef(name = "damage", namespace = "http://www.tei-c.org/ns/1.0", type = Damage.class),
+        @XmlElementRef(name = "handShift", namespace = "http://www.tei-c.org/ns/1.0", type = HandShift.class),
+        @XmlElementRef(name = "restore", namespace = "http://www.tei-c.org/ns/1.0", type = Restore.class),
+        @XmlElementRef(name = "supplied", namespace = "http://www.tei-c.org/ns/1.0", type = Supplied.class),
+        @XmlElementRef(name = "surplus", namespace = "http://www.tei-c.org/ns/1.0", type = Surplus.class),
+        @XmlElementRef(name = "secl", namespace = "http://www.tei-c.org/ns/1.0", type = Secl.class),
+        @XmlElementRef(name = "mod", namespace = "http://www.tei-c.org/ns/1.0", type = Mod.class),
+        @XmlElementRef(name = "redo", namespace = "http://www.tei-c.org/ns/1.0", type = Redo.class),
+        @XmlElementRef(name = "retrace", namespace = "http://www.tei-c.org/ns/1.0", type = Retrace.class),
+        @XmlElementRef(name = "undo", namespace = "http://www.tei-c.org/ns/1.0", type = Undo.class)
+    })
+    @XmlMixed
+    protected List<java.lang.Object> content;
+    @XmlAttribute(name = "force")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String force;
+    @XmlAttribute(name = "unit")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String unit;
+    @XmlAttribute(name = "pre")
+    protected Boolean pre;
+    @XmlAttribute(name = "rend")
+    protected List<java.lang.String> rends;
+    @XmlAttribute(name = "rendition")
+    protected List<java.lang.String> renditions;
+    @XmlAttribute(name = "style")
+    protected java.lang.String style;
+    @XmlAttribute(name = "facs")
+    protected List<java.lang.String> facs;
+    @XmlAttribute(name = "next")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String next;
+    @XmlAttribute(name = "synch")
+    protected List<java.lang.String> synches;
+    @XmlAttribute(name = "prev")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String prev;
+    @XmlAttribute(name = "exclude")
+    protected List<java.lang.String> excludes;
+    @XmlAttribute(name = "sameAs")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String sameAs;
+    @XmlAttribute(name = "copyOf")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String copyOf;
+    @XmlAttribute(name = "corresp")
+    protected List<java.lang.String> corresps;
+    @XmlAttribute(name = "select")
+    protected List<java.lang.String> selects;
+    @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String base;
+    @XmlAttribute(name = "ana")
+    protected List<java.lang.String> anas;
+    @XmlAttribute(name = "id", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlID
+    @XmlSchemaType(name = "ID")
+    protected java.lang.String id;
+    @XmlAttribute(name = "change")
+    protected List<java.lang.String> changes;
+    @XmlAttribute(name = "resp")
+    protected List<java.lang.String> resps;
+    @XmlAttribute(name = "cert")
+    protected java.lang.String cert;
+    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
+    protected java.lang.String lang;
+    @XmlAttribute(name = "source")
+    protected List<java.lang.String> sources;
+    @XmlAttribute(name = "n")
+    protected java.lang.String n;
+    @XmlAttribute(name = "space", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String space;
+    @XmlAttribute(name = "function")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String function;
+    @XmlAttribute(name = "valueDatcat", namespace = "http://www.isocat.org/ns/dcr")
+    protected List<java.lang.String> valueDatcats;
+    @XmlAttribute(name = "datcat", namespace = "http://www.isocat.org/ns/dcr")
+    protected List<java.lang.String> datcats;
+    @XmlAttribute(name = "real")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlSchemaType(name = "token")
+    protected java.lang.String real;
+    @XmlAttribute(name = "rhyme")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlSchemaType(name = "token")
+    protected java.lang.String rhyme;
+    @XmlAttribute(name = "met")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlSchemaType(name = "token")
+    protected java.lang.String met;
+    @XmlAttribute(name = "part")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String part;
+    @XmlAttribute(name = "subtype")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String subtype;
+    @XmlAttribute(name = "type")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String type;
+    @XmlAttribute(name = "lemmaRef")
+    @XmlSchemaType(name = "anyURI")
+    protected java.lang.String lemmaRef;
+    @XmlAttribute(name = "msd")
+    protected java.lang.String msd;
+    @XmlAttribute(name = "lemma")
+    protected java.lang.String lemma;
+    @XmlAttribute(name = "pos")
+    protected java.lang.String pos;
+    @XmlAttribute(name = "join")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    protected java.lang.String join;
+
+    /**
+     * Gets the value of the content property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the content property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getContent().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link G }
+     * {@link C }
+     * {@link Choice }
+     * {@link Abbr }
+     * {@link Expan }
+     * {@link Ex }
+     * {@link Am }
+     * {@link Subst }
+     * {@link Sic }
+     * {@link Corr }
+     * {@link Reg }
+     * {@link Orig }
+     * {@link Add }
+     * {@link Del }
+     * {@link Unclear }
+     * {@link Damage }
+     * {@link HandShift }
+     * {@link Restore }
+     * {@link Supplied }
+     * {@link Surplus }
+     * {@link Secl }
+     * {@link Mod }
+     * {@link Redo }
+     * {@link Retrace }
+     * {@link Undo }
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.Object> getContent() {
+        if (content == null) {
+            content = new ArrayList<java.lang.Object>();
+        }
+        return this.content;
+    }
+
+    /**
+     * Ruft den Wert der force-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getForce() {
+        return force;
+    }
+
+    /**
+     * Legt den Wert der force-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setForce(java.lang.String value) {
+        this.force = value;
+    }
+
+    /**
+     * Ruft den Wert der unit-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getUnit() {
+        return unit;
+    }
+
+    /**
+     * Legt den Wert der unit-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setUnit(java.lang.String value) {
+        this.unit = value;
+    }
+
+    /**
+     * Ruft den Wert der pre-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
+     */
+    public Boolean isPre() {
+        return pre;
+    }
+
+    /**
+     * Legt den Wert der pre-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
+     */
+    public void setPre(Boolean value) {
+        this.pre = value;
+    }
+
+    /**
+     * Gets the value of the rends property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rends property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getRends().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getRends() {
+        if (rends == null) {
+            rends = new ArrayList<java.lang.String>();
+        }
+        return this.rends;
+    }
+
+    /**
+     * Gets the value of the renditions property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the renditions property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getRenditions().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getRenditions() {
+        if (renditions == null) {
+            renditions = new ArrayList<java.lang.String>();
+        }
+        return this.renditions;
+    }
+
+    /**
+     * Ruft den Wert der style-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getStyle() {
+        return style;
+    }
+
+    /**
+     * Legt den Wert der style-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setStyle(java.lang.String value) {
+        this.style = value;
+    }
+
+    /**
+     * Gets the value of the facs property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the facs property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getFacs().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getFacs() {
+        if (facs == null) {
+            facs = new ArrayList<java.lang.String>();
+        }
+        return this.facs;
+    }
+
+    /**
+     * Ruft den Wert der next-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getNext() {
+        return next;
+    }
+
+    /**
+     * Legt den Wert der next-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setNext(java.lang.String value) {
+        this.next = value;
+    }
+
+    /**
+     * Gets the value of the synches property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the synches property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getSynches().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getSynches() {
+        if (synches == null) {
+            synches = new ArrayList<java.lang.String>();
+        }
+        return this.synches;
+    }
+
+    /**
+     * Ruft den Wert der prev-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getPrev() {
+        return prev;
+    }
+
+    /**
+     * Legt den Wert der prev-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setPrev(java.lang.String value) {
+        this.prev = value;
+    }
+
+    /**
+     * Gets the value of the excludes property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the excludes property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getExcludes().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getExcludes() {
+        if (excludes == null) {
+            excludes = new ArrayList<java.lang.String>();
+        }
+        return this.excludes;
+    }
+
+    /**
+     * Ruft den Wert der sameAs-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getSameAs() {
+        return sameAs;
+    }
+
+    /**
+     * Legt den Wert der sameAs-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setSameAs(java.lang.String value) {
+        this.sameAs = value;
+    }
+
+    /**
+     * Ruft den Wert der copyOf-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getCopyOf() {
+        return copyOf;
+    }
+
+    /**
+     * Legt den Wert der copyOf-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setCopyOf(java.lang.String value) {
+        this.copyOf = value;
+    }
+
+    /**
+     * Gets the value of the corresps property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the corresps property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getCorresps().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getCorresps() {
+        if (corresps == null) {
+            corresps = new ArrayList<java.lang.String>();
+        }
+        return this.corresps;
+    }
+
+    /**
+     * Gets the value of the selects property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the selects property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getSelects().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getSelects() {
+        if (selects == null) {
+            selects = new ArrayList<java.lang.String>();
+        }
+        return this.selects;
+    }
+
+    /**
+     * Ruft den Wert der base-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getBase() {
+        return base;
+    }
+
+    /**
+     * Legt den Wert der base-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setBase(java.lang.String value) {
+        this.base = value;
+    }
+
+    /**
+     * Gets the value of the anas property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the anas property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getAnas().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getAnas() {
+        if (anas == null) {
+            anas = new ArrayList<java.lang.String>();
+        }
+        return this.anas;
+    }
+
+    /**
+     * Ruft den Wert der id-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getId() {
+        return id;
+    }
+
+    /**
+     * Legt den Wert der id-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setId(java.lang.String value) {
+        this.id = value;
+    }
+
+    /**
+     * Gets the value of the changes property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changes property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getChanges().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getChanges() {
+        if (changes == null) {
+            changes = new ArrayList<java.lang.String>();
+        }
+        return this.changes;
+    }
+
+    /**
+     * Gets the value of the resps property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resps property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getResps().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getResps() {
+        if (resps == null) {
+            resps = new ArrayList<java.lang.String>();
+        }
+        return this.resps;
+    }
+
+    /**
+     * Ruft den Wert der cert-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getCert() {
+        return cert;
+    }
+
+    /**
+     * Legt den Wert der cert-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setCert(java.lang.String value) {
+        this.cert = value;
+    }
+
+    /**
+     * Ruft den Wert der lang-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getLang() {
+        return lang;
+    }
+
+    /**
+     * Legt den Wert der lang-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setLang(java.lang.String value) {
+        this.lang = value;
+    }
+
+    /**
+     * Gets the value of the sources property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sources property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getSources().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getSources() {
+        if (sources == null) {
+            sources = new ArrayList<java.lang.String>();
+        }
+        return this.sources;
+    }
+
+    /**
+     * Ruft den Wert der n-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getN() {
+        return n;
+    }
+
+    /**
+     * Legt den Wert der n-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setN(java.lang.String value) {
+        this.n = value;
+    }
+
+    /**
+     * Ruft den Wert der space-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getSpace() {
+        return space;
+    }
+
+    /**
+     * Legt den Wert der space-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setSpace(java.lang.String value) {
+        this.space = value;
+    }
+
+    /**
+     * Ruft den Wert der function-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getFunction() {
+        return function;
+    }
+
+    /**
+     * Legt den Wert der function-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setFunction(java.lang.String value) {
+        this.function = value;
+    }
+
+    /**
+     * Gets the value of the valueDatcats property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the valueDatcats property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getValueDatcats().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getValueDatcats() {
+        if (valueDatcats == null) {
+            valueDatcats = new ArrayList<java.lang.String>();
+        }
+        return this.valueDatcats;
+    }
+
+    /**
+     * Gets the value of the datcats property.
+     * 
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the datcats property.
+     * 
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * &lt;pre&gt;
+     *    getDatcats().add(newItem);
+     * &lt;/pre&gt;
+     * 
+     * 
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list
+     * {@link java.lang.String }
+     * 
+     * 
+     */
+    public List<java.lang.String> getDatcats() {
+        if (datcats == null) {
+            datcats = new ArrayList<java.lang.String>();
+        }
+        return this.datcats;
+    }
+
+    /**
+     * Ruft den Wert der real-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getReal() {
+        return real;
+    }
+
+    /**
+     * Legt den Wert der real-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setReal(java.lang.String value) {
+        this.real = value;
+    }
+
+    /**
+     * Ruft den Wert der rhyme-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getRhyme() {
+        return rhyme;
+    }
+
+    /**
+     * Legt den Wert der rhyme-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setRhyme(java.lang.String value) {
+        this.rhyme = value;
+    }
+
+    /**
+     * Ruft den Wert der met-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getMet() {
+        return met;
+    }
+
+    /**
+     * Legt den Wert der met-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setMet(java.lang.String value) {
+        this.met = value;
+    }
+
+    /**
+     * Ruft den Wert der part-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getPart() {
+        if (part == null) {
+            return "N";
+        } else {
+            return part;
+        }
+    }
+
+    /**
+     * Legt den Wert der part-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setPart(java.lang.String value) {
+        this.part = value;
+    }
+
+    /**
+     * Ruft den Wert der subtype-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getSubtype() {
+        return subtype;
+    }
+
+    /**
+     * Legt den Wert der subtype-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setSubtype(java.lang.String value) {
+        this.subtype = value;
+    }
+
+    /**
+     * Ruft den Wert der type-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getType() {
+        return type;
+    }
+
+    /**
+     * Legt den Wert der type-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setType(java.lang.String value) {
+        this.type = value;
+    }
+
+    /**
+     * Ruft den Wert der lemmaRef-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getLemmaRef() {
+        return lemmaRef;
+    }
+
+    /**
+     * Legt den Wert der lemmaRef-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setLemmaRef(java.lang.String value) {
+        this.lemmaRef = value;
+    }
+
+    /**
+     * Ruft den Wert der msd-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getMsd() {
+        return msd;
+    }
+
+    /**
+     * Legt den Wert der msd-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setMsd(java.lang.String value) {
+        this.msd = value;
+    }
+
+    /**
+     * Ruft den Wert der lemma-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getLemma() {
+        return lemma;
+    }
+
+    /**
+     * Legt den Wert der lemma-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setLemma(java.lang.String value) {
+        this.lemma = value;
+    }
+
+    /**
+     * Ruft den Wert der pos-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getPos() {
+        return pos;
+    }
+
+    /**
+     * Legt den Wert der pos-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setPos(java.lang.String value) {
+        this.pos = value;
+    }
+
+    /**
+     * Ruft den Wert der join-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public java.lang.String getJoin() {
+        return join;
+    }
+
+    /**
+     * Legt den Wert der join-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link java.lang.String }
+     *     
+     */
+    public void setJoin(java.lang.String value) {
+        this.join = value;
+    }
+
+    @Override
+    public java.lang.String toString() {
+        return new StringJoiner(", ", Pc.class.getSimpleName() + "[", "]")
+            .add("content=" + content)
+            .add("force='" + force + "'")
+            .add("unit='" + unit + "'")
+            .add("pre=" + pre)
+            .add("rends=" + rends)
+            .add("renditions=" + renditions)
+            .add("style='" + style + "'")
+            .add("facs=" + facs)
+            .add("next='" + next + "'")
+            .add("synches=" + synches)
+            .add("prev='" + prev + "'")
+            .add("excludes=" + excludes)
+            .add("sameAs='" + sameAs + "'")
+            .add("copyOf='" + copyOf + "'")
+            .add("corresps=" + corresps)
+            .add("selects=" + selects)
+            .add("base='" + base + "'")
+            .add("anas=" + anas)
+            .add("id='" + id + "'")
+            .add("changes=" + changes)
+            .add("resps=" + resps)
+            .add("cert='" + cert + "'")
+            .add("lang='" + lang + "'")
+            .add("sources=" + sources)
+            .add("n='" + n + "'")
+            .add("space='" + space + "'")
+            .add("function='" + function + "'")
+            .add("valueDatcats=" + valueDatcats)
+            .add("datcats=" + datcats)
+            .add("real='" + real + "'")
+            .add("rhyme='" + rhyme + "'")
+            .add("met='" + met + "'")
+            .add("part='" + part + "'")
+            .add("subtype='" + subtype + "'")
+            .add("type='" + type + "'")
+            .add("lemmaRef='" + lemmaRef + "'")
+            .add("msd='" + msd + "'")
+            .add("lemma='" + lemma + "'")
+            .add("pos='" + pos + "'")
+            .add("join='" + join + "'")
+            .toString();
+    }
+}

@@ -1,0 +1,14 @@
+target
+.classpat
+.project
+.settings
+.idea
+*.iml
+audit.log
+hs_err_*
+META-INF.JAXB
+hsp-messaging.iml
+.scannerwork
+.git
+dependency-check*
+*.versionsBackup
